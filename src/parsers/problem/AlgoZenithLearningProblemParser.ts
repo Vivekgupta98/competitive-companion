@@ -21,14 +21,15 @@ export class AlgoZenithLearningProblemParser extends Parser {
     const timeLimit = Number(1);
     task.setTimeLimit(timeLimit * 1000);
 
-    const inputs = elem.querySelectorAll('p.input');
-    const outputs = elem.querySelectorAll('p.output');
+    const inputs = elem.querySelectorAll('code.language-plaintext');
 
     inputs.forEach((inputElement, i) => {
-      const outputElement = outputs[i];
-      const input = inputElement.textContent;
-      const output = outputElement.textContent;
-      task.addTest(input, output);
+      if (i % 2 == 0) {
+        const outputElement = inputs[i+1];
+        const input = inputElement.textContent;
+        const output = outputElement.textContent;
+        task.addTest(input, output);
+      }
     });
 
     return task.build();

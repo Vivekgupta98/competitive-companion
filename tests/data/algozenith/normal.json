@@ -1,0 +1,31 @@
+{
+    "url": "https://www.learning.algozenith.com/problems/Robot-Movements-AZ101-364",
+    "parser": "AlgoZenithLearningProblemParser",
+    "result": {
+      "name": "Robot Movements AZ101",
+      "group": "OTOG",
+      "url": "https://www.learning.algozenith.com/problems/Robot-Movements-AZ101-364",
+      "interactive": false,
+      "memoryLimit": 256,
+      "timeLimit": 1000,
+      "tests": [
+        {
+          "input":"2\n3 4 5 2 3\nSNW\n4 5 5 2 2\nSESE\n",
+          "output": "1 2\n4 4\n"
+        }
+      ],
+      "testType": "single",
+      "input": {
+        "type": "stdin"
+      },
+      "output": {
+        "type": "stdout"
+      },
+      "languages": {
+        "java": {
+          "mainClass": "Main",
+          "taskClass": "Task"
+        }
+      }
+    }
+  }
